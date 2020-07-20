@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"hc-020k_measurement\startup_stm32f103xb.o"
+"hc-020k_measurement\main.o"
+"hc-020k_measurement\stm32f1xx_it.o"
+"hc-020k_measurement\stm32f1xx_hal_msp.o"
+"hc-020k_measurement\stm32f1xx_hal_gpio_ex.o"
+"hc-020k_measurement\stm32f1xx_hal_tim.o"
+"hc-020k_measurement\stm32f1xx_hal_tim_ex.o"
+"hc-020k_measurement\stm32f1xx_hal.o"
+"hc-020k_measurement\stm32f1xx_hal_rcc.o"
+"hc-020k_measurement\stm32f1xx_hal_rcc_ex.o"
+"hc-020k_measurement\stm32f1xx_hal_gpio.o"
+"hc-020k_measurement\stm32f1xx_hal_dma.o"
+"hc-020k_measurement\stm32f1xx_hal_cortex.o"
+"hc-020k_measurement\stm32f1xx_hal_pwr.o"
+"hc-020k_measurement\stm32f1xx_hal_flash.o"
+"hc-020k_measurement\stm32f1xx_hal_flash_ex.o"
+"hc-020k_measurement\stm32f1xx_hal_exti.o"
+"hc-020k_measurement\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "hc-020k_measurement\hc-020k_measurement.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hc-020k_measurement.map" -o hc-020k_measurement\hc-020k_measurement.axf
